@@ -7,6 +7,7 @@ function playRound(playerSelection, computerSelection) {
   computerSelection = getComputerChoice();
   console.log("Computer Selected " + computerSelection);
   playerSelection = prompt("Your Choice");
+  playerSelection = playerSelection.toLowerCase()
   console.log("Player Selected " + playerSelection);
   if (playerSelection == "rock" && computerSelection == "paper") {
     return console.log("Computer Win");
